@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VW-WK-QPg">
+                                <rect key="frame" x="274" y="494" width="220" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="TNa-Gi-AwY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="31"/>
+                                <state key="normal" title="Single Player">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="singAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1aW-xI-8Vm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BattleShip " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8B-vO-poD">
+                                <rect key="frame" x="201" y="292" width="367" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="PMn-dv-DFD"/>
+                                    <constraint firstAttribute="width" constant="367" id="RQp-fZ-RO0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFo-0b-Df5">
+                                <rect key="frame" x="326" y="686" width="116" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="fZ0-dK-3q8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="30"/>
+                                <state key="normal" title="Skirmish">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="vsButtonAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rl5-3y-YJj"/>
+                                    <segue destination="l1J-ha-p8k" kind="modal" identifier="push2" id="fvl-oD-7sl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0VW-WK-QPg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="274" id="EeI-Q3-ah8"/>
+                            <constraint firstItem="0VW-WK-QPg" firstAttribute="bottom" secondItem="oFo-0b-Df5" secondAttribute="bottom" constant="-62" id="LGj-kS-EbJ"/>
+                            <constraint firstItem="h8B-vO-poD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="272" id="MwY-H0-S5W"/>
+                            <constraint firstItem="0VW-WK-QPg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="474" id="SCX-rv-hW1"/>
+                            <constraint firstAttribute="trailing" secondItem="oFo-0b-Df5" secondAttribute="trailing" constant="326" id="VAJ-aV-cVT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oFo-0b-Df5" secondAttribute="bottom" constant="288" id="dV1-BH-iKm"/>
+                            <constraint firstItem="h8B-vO-poD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kGG-MD-zav"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="singButton" destination="0VW-WK-QPg" id="Sxt-SD-sG0"/>
+                        <outlet property="vsButton" destination="oFo-0b-Df5" id="RbG-89-I5q"/>
+                        <segue destination="RzR-AT-qtm" kind="modal" identifier="push1" id="If1-cD-qsN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2352" y="-557"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Egm-fx-mP8">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="RzR-AT-qtm" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="akB-FG-fLx">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dD8-jz-4t6" kind="relationship" relationship="rootViewController" id="Zrl-20-7iu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hJY-fQ-1aV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1093" y="-1834"/>
+        </scene>
+        <!--Single View Controller-->
+        <scene sceneID="0Za-45-KHo">
+            <objects>
+                <viewController id="dD8-jz-4t6" customClass="SingleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TLa-MC-xK2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Od4-z5-Zov"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rZs-si-4bw">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ocean-freashwater-aquifiers.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QQ8-M5-HlZ">
+                                <rect key="frame" x="184" y="312" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPl-vq-eBd">
+                                <rect key="frame" x="302" y="132" width="165" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-QZ-kln">
+                                <rect key="frame" x="77" y="76" width="39" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="cv1.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip:withEvent:" destination="dD8-jz-4t6" eventType="touchDragInside" id="9FH-Qh-qaI"/>
+                                    <action selector="ShipRotate:" destination="dD8-jz-4t6" eventType="touchDownRepeat" id="ys3-Iv-n1T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nz0-Ag-cjv">
+                                <rect key="frame" x="77" y="306" width="39" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="battleship-njjpg-ae155db15f7a02ca.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip:withEvent:" destination="dD8-jz-4t6" eventType="touchDragInside" id="Q43-nP-kVX"/>
+                                    <action selector="ShipRotate:" destination="dD8-jz-4t6" eventType="touchDownRepeat" id="DXM-ey-k9F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr5-I9-RXk">
+                                <rect key="frame" x="77" y="498" width="39" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="submarine.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip:withEvent:" destination="dD8-jz-4t6" eventType="touchDragInside" id="vuY-j6-Mjw"/>
+                                    <action selector="ShipRotate:" destination="dD8-jz-4t6" eventType="touchDownRepeat" id="kKe-z1-R14"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtO-M2-2zP">
+                                <rect key="frame" x="77" y="659" width="39" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="murasame_class.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip:withEvent:" destination="dD8-jz-4t6" eventType="touchDragInside" id="YIv-NJ-OsE"/>
+                                    <action selector="ShipRotate:" destination="dD8-jz-4t6" eventType="touchDownRepeat" id="W1w-KM-EHa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzF-uJ-hKa">
+                                <rect key="frame" x="77" y="827" width="39" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="r147547_520474.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip:withEvent:" destination="dD8-jz-4t6" eventType="touchDragInside" id="dMR-1u-Rqf"/>
+                                    <action selector="ShipRotate:" destination="dD8-jz-4t6" eventType="touchDownRepeat" id="sXE-Ax-kz5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZn-In-8b8">
+                                <rect key="frame" x="639" y="497" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="DoneAct:" destination="dD8-jz-4t6" eventType="touchUpInside" id="Zob-WX-HCg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iiv-Cg-uXb"/>
+                    <connections>
+                        <outlet property="DoneButton" destination="tZn-In-8b8" id="OiV-Po-asD"/>
+                        <outlet property="PlayerLabel" destination="ZPl-vq-eBd" id="LB8-UK-Fgc"/>
+                        <outlet property="Ship1" destination="wzF-uJ-hKa" id="fD0-0o-otY"/>
+                        <outlet property="Ship2" destination="NtO-M2-2zP" id="zPJ-a1-j7S"/>
+                        <outlet property="Ship3" destination="nr5-I9-RXk" id="zAS-ib-2jJ"/>
+                        <outlet property="Ship4" destination="nz0-Ag-cjv" id="wmm-kq-8aI"/>
+                        <outlet property="Ship5" destination="Qcs-QZ-kln" id="T1d-UD-XXq"/>
+                        <segue destination="qvR-y7-blU" kind="push" identifier="pusher" id="BPh-Ep-ifx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRP-8f-fZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="-1834"/>
+        </scene>
+        <!--Single Play View Controller-->
+        <scene sceneID="rIt-AR-B4k">
+            <objects>
+                <viewController storyboardIdentifier="9" id="qvR-y7-blU" customClass="SinglePlayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rqb-vH-4qI"/>
+                        <viewControllerLayoutGuide type="bottom" id="KTs-N0-IdG"/>
+                    </layoutGuides>
+                    <view key="view" tag="300" contentMode="scaleToFill" id="LVP-rV-Lfl">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ocean-freashwater-aquifiers.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FCJ-0p-LqS">
+                                <rect key="frame" x="184" y="77" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ocean-freashwater-aquifiers.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aSw-s5-0RB">
+                                <rect key="frame" x="184" y="547" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9CM-vk-QNR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="od5-X4-lr2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="-1834"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PKk-Qr-QbU">
+            <objects>
+                <viewController id="usM-yw-k26" customClass="VSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Wo-2I-7RB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hv1-cM-a5h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a0a-5o-YF0">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ocean-freashwater-aquifiers.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3sV-nJ-EhJ">
+                                <rect key="frame" x="184" y="312" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Dx-rC-S9E">
+                                <rect key="frame" x="192" y="0.0" width="0.0" height="512"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ct0-IE-sjj">
+                                <rect key="frame" x="77" y="65" width="39" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="cv1.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip:withEvent:" destination="usM-yw-k26" eventType="touchDragInside" id="tsK-gY-BPl"/>
+                                    <action selector="ShipRotate:" destination="usM-yw-k26" eventType="touchDownRepeat" id="cMV-4X-ExN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5D-cP-2MW">
+                                <rect key="frame" x="77" y="295" width="39" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="battleship-njjpg-ae155db15f7a02ca.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip:withEvent:" destination="usM-yw-k26" eventType="touchDragInside" id="Xeg-LQ-SSB"/>
+                                    <action selector="ShipRotate:" destination="usM-yw-k26" eventType="touchDownRepeat" id="0wD-EP-YZ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYN-hY-dU2">
+                                <rect key="frame" x="77" y="487" width="39" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="submarine.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip:withEvent:" destination="usM-yw-k26" eventType="touchDragInside" id="61B-mw-NAx"/>
+                                    <action selector="ShipRotate:" destination="usM-yw-k26" eventType="touchDownRepeat" id="Rf5-iz-Yw2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbv-rk-x4m">
+                                <rect key="frame" x="77" y="648" width="39" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="murasame_class.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip:withEvent:" destination="usM-yw-k26" eventType="touchDragInside" id="oKj-fE-jjK"/>
+                                    <action selector="ShipRotate:" destination="usM-yw-k26" eventType="touchDownRepeat" id="pYf-Qw-1d2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMx-Mv-X9D">
+                                <rect key="frame" x="77" y="816" width="39" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="r147547_520474.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip:withEvent:" destination="usM-yw-k26" eventType="touchDragInside" id="MgB-yt-zq7"/>
+                                    <action selector="ShipRotate:" destination="usM-yw-k26" eventType="touchDownRepeat" id="v6d-dz-VRz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5Z-v0-hro">
+                                <rect key="frame" x="641" y="497" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="DoneButtonAction:" destination="usM-yw-k26" eventType="touchUpInside" id="2as-6E-UDG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc1-Qq-qCL">
+                                <rect key="frame" x="302" y="133" width="165" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NEG-W4-KIa"/>
+                    <connections>
+                        <outlet property="DoneButton" destination="r5Z-v0-hro" id="cb2-TG-QcT"/>
+                        <outlet property="PlayerLabel" destination="dc1-Qq-qCL" id="yod-y9-dO9"/>
+                        <outlet property="Ship1" destination="jMx-Mv-X9D" id="R3x-iK-kMc"/>
+                        <outlet property="Ship2" destination="bbv-rk-x4m" id="cHk-Gi-k2Z"/>
+                        <outlet property="Ship3" destination="CYN-hY-dU2" id="O71-cN-CGh"/>
+                        <outlet property="Ship4" destination="q5D-cP-2MW" id="JL3-sW-fIS"/>
+                        <outlet property="Ship5" destination="ct0-IE-sjj" id="NNQ-MR-RTA"/>
+                        <segue destination="XsB-BJ-Zlr" kind="push" identifier="8" id="Ss1-XH-1Kl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lT8-am-x1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19" y="484"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vhT-ow-aiR">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="l1J-ha-p8k" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CGv-3d-YeY">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="usM-yw-k26" kind="relationship" relationship="rootViewController" id="YoD-J9-2tw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIi-VN-wbq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1093" y="476"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="g2S-6O-DLs">
+            <objects>
+                <viewController storyboardIdentifier="7" id="XsB-BJ-Zlr" customClass="VSViewController2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CGq-xi-sC6"/>
+                        <viewControllerLayoutGuide type="bottom" id="u61-Py-nAn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0hf-9P-y9K">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ocean-freashwater-aquifiers.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hHS-k6-NzM">
+                                <rect key="frame" x="184" y="312" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds3-0A-Dch">
+                                <rect key="frame" x="77" y="65" width="39" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="cv1.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip2:withEvent:" destination="XsB-BJ-Zlr" eventType="touchDragInside" id="yYY-dT-2rr"/>
+                                    <action selector="ShipRotate2:" destination="XsB-BJ-Zlr" eventType="touchDownRepeat" id="9Pc-7t-Q5F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wS6-Mm-sI0">
+                                <rect key="frame" x="77" y="295" width="39" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="battleship-njjpg-ae155db15f7a02ca.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip2:withEvent:" destination="XsB-BJ-Zlr" eventType="touchDragInside" id="hvM-us-t0F"/>
+                                    <action selector="ShipRotate2:" destination="XsB-BJ-Zlr" eventType="touchDownRepeat" id="G9B-xm-zhC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enp-tR-EJS">
+                                <rect key="frame" x="77" y="487" width="39" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="submarine.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip2:withEvent:" destination="XsB-BJ-Zlr" eventType="touchDragInside" id="6jH-bf-Men"/>
+                                    <action selector="ShipRotate2:" destination="XsB-BJ-Zlr" eventType="touchDownRepeat" id="RWU-RV-8sP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJ7-MS-sL8">
+                                <rect key="frame" x="77" y="648" width="39" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="murasame_class.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip2:withEvent:" destination="XsB-BJ-Zlr" eventType="touchDragInside" id="hPf-vl-8vF"/>
+                                    <action selector="ShipRotate2:" destination="XsB-BJ-Zlr" eventType="touchDownRepeat" id="Uj6-ve-cvd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xn-MR-Lyy">
+                                <rect key="frame" x="77" y="816" width="39" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="r147547_520474.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MoveShip2:withEvent:" destination="XsB-BJ-Zlr" eventType="touchDragInside" id="vYd-hT-0vA"/>
+                                    <action selector="ShipRotate2:" destination="XsB-BJ-Zlr" eventType="touchDownRepeat" id="fwy-ub-NZN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXO-ak-d4r">
+                                <rect key="frame" x="302" y="133" width="165" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Superclarendon-Light" family="Superclarendon" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tK9-ND-wpU">
+                                <rect key="frame" x="646" y="471" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="db:" destination="XsB-BJ-Zlr" eventType="touchUpInside" id="Df3-ME-gaA"/>
+                                    <segue destination="OQL-jt-6xW" kind="modal" id="NCa-SG-kUX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgn-eD-1PF">
+                                <rect key="frame" x="652" y="509" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="db:" destination="XsB-BJ-Zlr" eventType="touchUpInside" id="Srm-cC-bIE"/>
+                                    <segue destination="ErR-7z-YMC" kind="modal" id="bb4-QX-4Wc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Xd-JK-PGO"/>
+                    <connections>
+                        <outlet property="DoneButton" destination="tK9-ND-wpU" id="dxz-Fi-LLA"/>
+                        <outlet property="DoneButton2" destination="Pgn-eD-1PF" id="0Et-eT-Lxk"/>
+                        <outlet property="PlayerLabel2" destination="IXO-ak-d4r" id="BT7-ft-xSn"/>
+                        <outlet property="Ship1" destination="0xn-MR-Lyy" id="v7u-x0-ied"/>
+                        <outlet property="Ship2" destination="pJ7-MS-sL8" id="zoP-En-STd"/>
+                        <outlet property="Ship3" destination="Enp-tR-EJS" id="8s9-fx-nDL"/>
+                        <outlet property="Ship4" destination="wS6-Mm-sI0" id="Etx-Ix-qP7"/>
+                        <outlet property="Ship5" destination="ds3-0A-Dch" id="O5F-LR-U4m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QCi-qX-KoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="476"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D5h-NK-gSm">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="OQL-jt-6xW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LMv-Ev-Vth">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2H9-hx-30O" kind="relationship" relationship="rootViewController" id="qG0-ft-XVH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nyl-uI-W79" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3146" y="-516"/>
+        </scene>
+        <!--Play View Controller-->
+        <scene sceneID="2u6-pr-q8W">
+            <objects>
+                <viewController storyboardIdentifier="1" id="2H9-hx-30O" customClass="PlayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TEQ-aa-EMG"/>
+                        <viewControllerLayoutGuide type="bottom" id="uUx-2H-T4Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ETV-xd-QWI">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G69-Co-e2x"/>
+                    <connections>
+                        <segue destination="Cin-EY-BmW" kind="push" id="D5Y-Ax-iow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nl6-l9-1vv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4134" y="-516"/>
+        </scene>
+        <!--Play View Controller3-->
+        <scene sceneID="x2d-6T-V5a">
+            <objects>
+                <viewController storyboardIdentifier="3" id="tLz-d5-Wdm" customClass="PlayViewController3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fsu-rh-o4I"/>
+                        <viewControllerLayoutGuide type="bottom" id="PcQ-Ch-AOD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yq4-VA-4cf">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="B9G-8f-qCe"/>
+                    <connections>
+                        <segue destination="uOa-LD-VgJ" kind="push" id="Xiq-8a-dVM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zbg-l0-kzU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4106" y="1209"/>
+        </scene>
+        <!--Play View Controller4-->
+        <scene sceneID="Uui-cf-VFd">
+            <objects>
+                <viewController storyboardIdentifier="4" id="uOa-LD-VgJ" customClass="PlayViewController4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jn2-Iu-NGp"/>
+                        <viewControllerLayoutGuide type="bottom" id="OAF-Zk-pxo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dAh-Pi-kqq">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3bt-O7-Tno"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3LO-5v-Oam" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5102" y="1197"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3CN-Uf-Xts">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="ErR-7z-YMC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZZs-3c-eEP">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tLz-d5-Wdm" kind="relationship" relationship="rootViewController" id="kZd-yb-rIB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C1k-5z-2na" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3126" y="1197"/>
+        </scene>
+        <!--Play View Controller2-->
+        <scene sceneID="4xt-yl-l9O">
+            <objects>
+                <viewController storyboardIdentifier="2" id="Cin-EY-BmW" customClass="PlayViewController2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dMs-YT-hWm"/>
+                        <viewControllerLayoutGuide type="bottom" id="TEZ-nt-DMq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="peF-VZ-cgM">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hVd-3A-V6r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rwA-yz-XT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5130" y="-516"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="battleship-njjpg-ae155db15f7a02ca.jpg" width="576" height="401"/>
+        <image name="cv1.jpg" width="324" height="342"/>
+        <image name="murasame_class.jpg" width="600" height="376"/>
+        <image name="ocean-freashwater-aquifiers.jpg" width="530" height="298"/>
+        <image name="r147547_520474.jpg" width="600" height="435"/>
+        <image name="submarine.jpg" width="272" height="185"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

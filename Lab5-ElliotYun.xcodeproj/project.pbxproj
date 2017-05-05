@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D8406011EBC2560005D3E77 /* boo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D8406001EBC2560005D3E77 /* boo.wav */; };
+		4D8406051EBC257E005D3E77 /* 1024x1024.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4D8406021EBC257E005D3E77 /* 1024x1024.jpeg */; };
+		4D8406061EBC257E005D3E77 /* cheer.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D8406031EBC257E005D3E77 /* cheer.wav */; };
+		4D8406071EBC257E005D3E77 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D8406041EBC257E005D3E77 /* explosion.wav */; };
+		683763FF1A09E2CC00651B3D /* VSViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 683763FE1A09E2CC00651B3D /* VSViewController2.m */; };
+		6865E1281A0C378900714392 /* PlayViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6865E1271A0C378900714392 /* PlayViewController2.m */; };
+		688134741A42330300915F6D /* battleship-630x300.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 688134731A42330300915F6D /* battleship-630x300.jpg */; };
+		688134781A42349A00915F6D /* bomb.wav in Resources */ = {isa = PBXBuildFile; fileRef = 688134771A42349A00915F6D /* bomb.wav */; };
+		68A894FE1A0C6B78008B3D48 /* PlayViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A894FD1A0C6B78008B3D48 /* PlayViewController3.m */; };
+		68A895011A0C6B85008B3D48 /* PlayViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A895001A0C6B85008B3D48 /* PlayViewController4.m */; };
+		68B95B191A0ABE7A004B273C /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B95B181A0ABE7A004B273C /* PlayViewController.m */; };
+		68B95B1F1A0C04E3004B273C /* SingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B95B1E1A0C04E3004B273C /* SingleViewController.m */; };
+		68B95B221A0C0500004B273C /* SinglePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B95B211A0C0500004B273C /* SinglePlayViewController.m */; };
+		68C92DD71A0856A400EB6E00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C92DD61A0856A400EB6E00 /* Foundation.framework */; };
+		68C92DD91A0856A400EB6E00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C92DD81A0856A400EB6E00 /* CoreGraphics.framework */; };
+		68C92DDB1A0856A400EB6E00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C92DDA1A0856A400EB6E00 /* UIKit.framework */; };
+		68C92DE11A0856A400EB6E00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68C92DDF1A0856A400EB6E00 /* InfoPlist.strings */; };
+		68C92DE31A0856A400EB6E00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C92DE21A0856A400EB6E00 /* main.m */; };
+		68C92DE71A0856A400EB6E00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C92DE61A0856A400EB6E00 /* AppDelegate.m */; };
+		68C92DEA1A0856A400EB6E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68C92DE81A0856A400EB6E00 /* Main.storyboard */; };
+		68C92DED1A0856A400EB6E00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C92DEC1A0856A400EB6E00 /* ViewController.m */; };
+		68C92DEF1A0856A400EB6E00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68C92DEE1A0856A400EB6E00 /* Images.xcassets */; };
+		68C92DF61A0856A400EB6E00 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C92DF51A0856A400EB6E00 /* XCTest.framework */; };
+		68C92DF71A0856A400EB6E00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C92DD61A0856A400EB6E00 /* Foundation.framework */; };
+		68C92DF81A0856A400EB6E00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C92DDA1A0856A400EB6E00 /* UIKit.framework */; };
+		68C92E001A0856A400EB6E00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68C92DFE1A0856A400EB6E00 /* InfoPlist.strings */; };
+		68C92E021A0856A400EB6E00 /* Lab5_ElliotYunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C92E011A0856A400EB6E00 /* Lab5_ElliotYunTests.m */; };
+		68C92E4E1A087AA400EB6E00 /* VSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C92E4D1A087AA400EB6E00 /* VSViewController.m */; };
+		68C92E521A08834D00EB6E00 /* ocean-freashwater-aquifiers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68C92E511A08834D00EB6E00 /* ocean-freashwater-aquifiers.jpg */; };
+		68C92E541A0894F700EB6E00 /* cv1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68C92E531A0894F700EB6E00 /* cv1.jpg */; };
+		68C92E561A08958400EB6E00 /* battleship-njjpg-ae155db15f7a02ca.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68C92E551A08958400EB6E00 /* battleship-njjpg-ae155db15f7a02ca.jpg */; };
+		68C92E581A0895E200EB6E00 /* submarine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68C92E571A0895E200EB6E00 /* submarine.jpg */; };
+		68C92E5A1A08968100EB6E00 /* burke_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68C92E591A08968100EB6E00 /* burke_6.jpg */; };
+		68C92E5C1A0896D900EB6E00 /* murasame_class.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68C92E5B1A0896D900EB6E00 /* murasame_class.jpg */; };
+		68C92E5E1A08972A00EB6E00 /* r147547_520474.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68C92E5D1A08972A00EB6E00 /* r147547_520474.jpg */; };
+		68FF19DA1A0EF16200BA1F5E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68FF19D91A0EF16200BA1F5E /* AudioToolbox.framework */; };
+		68FF19DC1A0EF61800BA1F5E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68FF19DB1A0EF61800BA1F5E /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68C92DF91A0856A400EB6E00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68C92DCB1A0856A300EB6E00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68C92DD21A0856A300EB6E00;
+			remoteInfo = "Lab5-ElliotYun";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D8406001EBC2560005D3E77 /* boo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = boo.wav; sourceTree = "<group>"; };
+		4D8406021EBC257E005D3E77 /* 1024x1024.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1024x1024.jpeg; sourceTree = "<group>"; };
+		4D8406031EBC257E005D3E77 /* cheer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cheer.wav; sourceTree = "<group>"; };
+		4D8406041EBC257E005D3E77 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
+		683763FD1A09E2CC00651B3D /* VSViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSViewController2.h; sourceTree = "<group>"; };
+		683763FE1A09E2CC00651B3D /* VSViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSViewController2.m; sourceTree = "<group>"; };
+		6865E1261A0C378900714392 /* PlayViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController2.h; sourceTree = "<group>"; };
+		6865E1271A0C378900714392 /* PlayViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController2.m; sourceTree = "<group>"; };
+		688134731A42330300915F6D /* battleship-630x300.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "battleship-630x300.jpg"; sourceTree = "<group>"; };
+		688134771A42349A00915F6D /* bomb.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bomb.wav; sourceTree = "<group>"; };
+		68A894FC1A0C6B78008B3D48 /* PlayViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController3.h; sourceTree = "<group>"; };
+		68A894FD1A0C6B78008B3D48 /* PlayViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController3.m; sourceTree = "<group>"; };
+		68A894FF1A0C6B85008B3D48 /* PlayViewController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController4.h; sourceTree = "<group>"; };
+		68A895001A0C6B85008B3D48 /* PlayViewController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController4.m; sourceTree = "<group>"; };
+		68B95B171A0ABE7A004B273C /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		68B95B181A0ABE7A004B273C /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		68B95B1D1A0C04E3004B273C /* SingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleViewController.h; sourceTree = "<group>"; };
+		68B95B1E1A0C04E3004B273C /* SingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleViewController.m; sourceTree = "<group>"; };
+		68B95B201A0C0500004B273C /* SinglePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinglePlayViewController.h; sourceTree = "<group>"; };
+		68B95B211A0C0500004B273C /* SinglePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinglePlayViewController.m; sourceTree = "<group>"; };
+		68C92DD31A0856A400EB6E00 /* Lab5-ElliotYun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab5-ElliotYun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C92DD61A0856A400EB6E00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		68C92DD81A0856A400EB6E00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		68C92DDA1A0856A400EB6E00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		68C92DDE1A0856A400EB6E00 /* Lab5-ElliotYun-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lab5-ElliotYun-Info.plist"; sourceTree = "<group>"; };
+		68C92DE01A0856A400EB6E00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68C92DE21A0856A400EB6E00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68C92DE41A0856A400EB6E00 /* Lab5-ElliotYun-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lab5-ElliotYun-Prefix.pch"; sourceTree = "<group>"; };
+		68C92DE51A0856A400EB6E00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68C92DE61A0856A400EB6E00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68C92DE91A0856A400EB6E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68C92DEB1A0856A400EB6E00 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		68C92DEC1A0856A400EB6E00 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68C92DEE1A0856A400EB6E00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		68C92DF41A0856A400EB6E00 /* Lab5-ElliotYunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lab5-ElliotYunTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C92DF51A0856A400EB6E00 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		68C92DFD1A0856A400EB6E00 /* Lab5-ElliotYunTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lab5-ElliotYunTests-Info.plist"; sourceTree = "<group>"; };
+		68C92DFF1A0856A400EB6E00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68C92E011A0856A400EB6E00 /* Lab5_ElliotYunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lab5_ElliotYunTests.m; sourceTree = "<group>"; };
+		68C92E4C1A087AA400EB6E00 /* VSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSViewController.h; sourceTree = "<group>"; };
+		68C92E4D1A087AA400EB6E00 /* VSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSViewController.m; sourceTree = "<group>"; };
+		68C92E511A08834D00EB6E00 /* ocean-freashwater-aquifiers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ocean-freashwater-aquifiers.jpg"; sourceTree = "<group>"; };
+		68C92E531A0894F700EB6E00 /* cv1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cv1.jpg; sourceTree = "<group>"; };
+		68C92E551A08958400EB6E00 /* battleship-njjpg-ae155db15f7a02ca.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "battleship-njjpg-ae155db15f7a02ca.jpg"; sourceTree = "<group>"; };
+		68C92E571A0895E200EB6E00 /* submarine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = submarine.jpg; sourceTree = "<group>"; };
+		68C92E591A08968100EB6E00 /* burke_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = burke_6.jpg; sourceTree = "<group>"; };
+		68C92E5B1A0896D900EB6E00 /* murasame_class.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = murasame_class.jpg; sourceTree = "<group>"; };
+		68C92E5D1A08972A00EB6E00 /* r147547_520474.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = r147547_520474.jpg; sourceTree = "<group>"; };
+		68FF19D91A0EF16200BA1F5E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		68FF19DB1A0EF61800BA1F5E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68C92DD01A0856A300EB6E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68FF19DC1A0EF61800BA1F5E /* AVFoundation.framework in Frameworks */,
+				68FF19DA1A0EF16200BA1F5E /* AudioToolbox.framework in Frameworks */,
+				68C92DD91A0856A400EB6E00 /* CoreGraphics.framework in Frameworks */,
+				68C92DDB1A0856A400EB6E00 /* UIKit.framework in Frameworks */,
+				68C92DD71A0856A400EB6E00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68C92DF11A0856A400EB6E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C92DF61A0856A400EB6E00 /* XCTest.framework in Frameworks */,
+				68C92DF81A0856A400EB6E00 /* UIKit.framework in Frameworks */,
+				68C92DF71A0856A400EB6E00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68C92DCA1A0856A300EB6E00 = {
+			isa = PBXGroup;
+			children = (
+				68C92DDC1A0856A400EB6E00 /* Lab5-ElliotYun */,
+				68C92DFB1A0856A400EB6E00 /* Lab5-ElliotYunTests */,
+				68C92DD51A0856A400EB6E00 /* Frameworks */,
+				68C92DD41A0856A400EB6E00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68C92DD41A0856A400EB6E00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68C92DD31A0856A400EB6E00 /* Lab5-ElliotYun.app */,
+				68C92DF41A0856A400EB6E00 /* Lab5-ElliotYunTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68C92DD51A0856A400EB6E00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68FF19DB1A0EF61800BA1F5E /* AVFoundation.framework */,
+				68FF19D91A0EF16200BA1F5E /* AudioToolbox.framework */,
+				68C92DD61A0856A400EB6E00 /* Foundation.framework */,
+				68C92DD81A0856A400EB6E00 /* CoreGraphics.framework */,
+				68C92DDA1A0856A400EB6E00 /* UIKit.framework */,
+				68C92DF51A0856A400EB6E00 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68C92DDC1A0856A400EB6E00 /* Lab5-ElliotYun */ = {
+			isa = PBXGroup;
+			children = (
+				4D8406021EBC257E005D3E77 /* 1024x1024.jpeg */,
+				4D8406031EBC257E005D3E77 /* cheer.wav */,
+				4D8406041EBC257E005D3E77 /* explosion.wav */,
+				4D8406001EBC2560005D3E77 /* boo.wav */,
+				688134771A42349A00915F6D /* bomb.wav */,
+				68C92E5D1A08972A00EB6E00 /* r147547_520474.jpg */,
+				68C92E5B1A0896D900EB6E00 /* murasame_class.jpg */,
+				68C92E591A08968100EB6E00 /* burke_6.jpg */,
+				68C92E571A0895E200EB6E00 /* submarine.jpg */,
+				68C92E551A08958400EB6E00 /* battleship-njjpg-ae155db15f7a02ca.jpg */,
+				68C92E531A0894F700EB6E00 /* cv1.jpg */,
+				688134731A42330300915F6D /* battleship-630x300.jpg */,
+				68C92E511A08834D00EB6E00 /* ocean-freashwater-aquifiers.jpg */,
+				68C92DE51A0856A400EB6E00 /* AppDelegate.h */,
+				68C92DE61A0856A400EB6E00 /* AppDelegate.m */,
+				68C92DE81A0856A400EB6E00 /* Main.storyboard */,
+				68C92DEB1A0856A400EB6E00 /* ViewController.h */,
+				68C92DEC1A0856A400EB6E00 /* ViewController.m */,
+				68C92DEE1A0856A400EB6E00 /* Images.xcassets */,
+				68C92DDD1A0856A400EB6E00 /* Supporting Files */,
+				68C92E4C1A087AA400EB6E00 /* VSViewController.h */,
+				68C92E4D1A087AA400EB6E00 /* VSViewController.m */,
+				683763FD1A09E2CC00651B3D /* VSViewController2.h */,
+				683763FE1A09E2CC00651B3D /* VSViewController2.m */,
+				68B95B171A0ABE7A004B273C /* PlayViewController.h */,
+				68B95B181A0ABE7A004B273C /* PlayViewController.m */,
+				6865E1271A0C378900714392 /* PlayViewController2.m */,
+				6865E1261A0C378900714392 /* PlayViewController2.h */,
+				68B95B1E1A0C04E3004B273C /* SingleViewController.m */,
+				68B95B1D1A0C04E3004B273C /* SingleViewController.h */,
+				68B95B201A0C0500004B273C /* SinglePlayViewController.h */,
+				68B95B211A0C0500004B273C /* SinglePlayViewController.m */,
+				68A894FC1A0C6B78008B3D48 /* PlayViewController3.h */,
+				68A894FD1A0C6B78008B3D48 /* PlayViewController3.m */,
+				68A894FF1A0C6B85008B3D48 /* PlayViewController4.h */,
+				68A895001A0C6B85008B3D48 /* PlayViewController4.m */,
+			);
+			path = "Lab5-ElliotYun";
+			sourceTree = "<group>";
+		};
+		68C92DDD1A0856A400EB6E00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68C92DDE1A0856A400EB6E00 /* Lab5-ElliotYun-Info.plist */,
+				68C92DDF1A0856A400EB6E00 /* InfoPlist.strings */,
+				68C92DE21A0856A400EB6E00 /* main.m */,
+				68C92DE41A0856A400EB6E00 /* Lab5-ElliotYun-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68C92DFB1A0856A400EB6E00 /* Lab5-ElliotYunTests */ = {
+			isa = PBXGroup;
+			children = (
+				68C92E011A0856A400EB6E00 /* Lab5_ElliotYunTests.m */,
+				68C92DFC1A0856A400EB6E00 /* Supporting Files */,
+			);
+			path = "Lab5-ElliotYunTests";
+			sourceTree = "<group>";
+		};
+		68C92DFC1A0856A400EB6E00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68C92DFD1A0856A400EB6E00 /* Lab5-ElliotYunTests-Info.plist */,
+				68C92DFE1A0856A400EB6E00 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68C92DD21A0856A300EB6E00 /* Lab5-ElliotYun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68C92E051A0856A400EB6E00 /* Build configuration list for PBXNativeTarget "Lab5-ElliotYun" */;
+			buildPhases = (
+				68C92DCF1A0856A300EB6E00 /* Sources */,
+				68C92DD01A0856A300EB6E00 /* Frameworks */,
+				68C92DD11A0856A300EB6E00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lab5-ElliotYun";
+			productName = "Lab5-ElliotYun";
+			productReference = 68C92DD31A0856A400EB6E00 /* Lab5-ElliotYun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68C92DF31A0856A400EB6E00 /* Lab5-ElliotYunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68C92E081A0856A400EB6E00 /* Build configuration list for PBXNativeTarget "Lab5-ElliotYunTests" */;
+			buildPhases = (
+				68C92DF01A0856A400EB6E00 /* Sources */,
+				68C92DF11A0856A400EB6E00 /* Frameworks */,
+				68C92DF21A0856A400EB6E00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68C92DFA1A0856A400EB6E00 /* PBXTargetDependency */,
+			);
+			name = "Lab5-ElliotYunTests";
+			productName = "Lab5-ElliotYunTests";
+			productReference = 68C92DF41A0856A400EB6E00 /* Lab5-ElliotYunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68C92DCB1A0856A300EB6E00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = com;
+				TargetAttributes = {
+					68C92DF31A0856A400EB6E00 = {
+						TestTargetID = 68C92DD21A0856A300EB6E00;
+					};
+				};
+			};
+			buildConfigurationList = 68C92DCE1A0856A300EB6E00 /* Build configuration list for PBXProject "Lab5-ElliotYun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68C92DCA1A0856A300EB6E00;
+			productRefGroup = 68C92DD41A0856A400EB6E00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68C92DD21A0856A300EB6E00 /* Lab5-ElliotYun */,
+				68C92DF31A0856A400EB6E00 /* Lab5-ElliotYunTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68C92DD11A0856A300EB6E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D8406061EBC257E005D3E77 /* cheer.wav in Resources */,
+				68C92E5A1A08968100EB6E00 /* burke_6.jpg in Resources */,
+				4D8406051EBC257E005D3E77 /* 1024x1024.jpeg in Resources */,
+				68C92E561A08958400EB6E00 /* battleship-njjpg-ae155db15f7a02ca.jpg in Resources */,
+				68C92E541A0894F700EB6E00 /* cv1.jpg in Resources */,
+				688134781A42349A00915F6D /* bomb.wav in Resources */,
+				68C92E581A0895E200EB6E00 /* submarine.jpg in Resources */,
+				68C92E5E1A08972A00EB6E00 /* r147547_520474.jpg in Resources */,
+				4D8406071EBC257E005D3E77 /* explosion.wav in Resources */,
+				68C92E5C1A0896D900EB6E00 /* murasame_class.jpg in Resources */,
+				688134741A42330300915F6D /* battleship-630x300.jpg in Resources */,
+				4D8406011EBC2560005D3E77 /* boo.wav in Resources */,
+				68C92DEF1A0856A400EB6E00 /* Images.xcassets in Resources */,
+				68C92DE11A0856A400EB6E00 /* InfoPlist.strings in Resources */,
+				68C92DEA1A0856A400EB6E00 /* Main.storyboard in Resources */,
+				68C92E521A08834D00EB6E00 /* ocean-freashwater-aquifiers.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68C92DF21A0856A400EB6E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C92E001A0856A400EB6E00 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68C92DCF1A0856A300EB6E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C92DED1A0856A400EB6E00 /* ViewController.m in Sources */,
+				68C92E4E1A087AA400EB6E00 /* VSViewController.m in Sources */,
+				68A894FE1A0C6B78008B3D48 /* PlayViewController3.m in Sources */,
+				68B95B221A0C0500004B273C /* SinglePlayViewController.m in Sources */,
+				68B95B1F1A0C04E3004B273C /* SingleViewController.m in Sources */,
+				6865E1281A0C378900714392 /* PlayViewController2.m in Sources */,
+				68C92DE71A0856A400EB6E00 /* AppDelegate.m in Sources */,
+				68C92DE31A0856A400EB6E00 /* main.m in Sources */,
+				68B95B191A0ABE7A004B273C /* PlayViewController.m in Sources */,
+				683763FF1A09E2CC00651B3D /* VSViewController2.m in Sources */,
+				68A895011A0C6B85008B3D48 /* PlayViewController4.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68C92DF01A0856A400EB6E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C92E021A0856A400EB6E00 /* Lab5_ElliotYunTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68C92DFA1A0856A400EB6E00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68C92DD21A0856A300EB6E00 /* Lab5-ElliotYun */;
+			targetProxy = 68C92DF91A0856A400EB6E00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68C92DDF1A0856A400EB6E00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68C92DE01A0856A400EB6E00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		68C92DE81A0856A400EB6E00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68C92DE91A0856A400EB6E00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68C92DFE1A0856A400EB6E00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68C92DFF1A0856A400EB6E00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68C92E031A0856A400EB6E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		68C92E041A0856A400EB6E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68C92E061A0856A400EB6E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lab5-ElliotYun/Lab5-ElliotYun-Prefix.pch";
+				INFOPLIST_FILE = "Lab5-ElliotYun/Lab5-ElliotYun-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		68C92E071A0856A400EB6E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lab5-ElliotYun/Lab5-ElliotYun-Prefix.pch";
+				INFOPLIST_FILE = "Lab5-ElliotYun/Lab5-ElliotYun-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		68C92E091A0856A400EB6E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lab5-ElliotYun.app/Lab5-ElliotYun";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lab5-ElliotYun/Lab5-ElliotYun-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lab5-ElliotYunTests/Lab5-ElliotYunTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		68C92E0A1A0856A400EB6E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lab5-ElliotYun.app/Lab5-ElliotYun";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lab5-ElliotYun/Lab5-ElliotYun-Prefix.pch";
+				INFOPLIST_FILE = "Lab5-ElliotYunTests/Lab5-ElliotYunTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68C92DCE1A0856A300EB6E00 /* Build configuration list for PBXProject "Lab5-ElliotYun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68C92E031A0856A400EB6E00 /* Debug */,
+				68C92E041A0856A400EB6E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68C92E051A0856A400EB6E00 /* Build configuration list for PBXNativeTarget "Lab5-ElliotYun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68C92E061A0856A400EB6E00 /* Debug */,
+				68C92E071A0856A400EB6E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68C92E081A0856A400EB6E00 /* Build configuration list for PBXNativeTarget "Lab5-ElliotYunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68C92E091A0856A400EB6E00 /* Debug */,
+				68C92E0A1A0856A400EB6E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68C92DCB1A0856A300EB6E00 /* Project object */;
+}
